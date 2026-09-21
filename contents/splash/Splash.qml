@@ -67,7 +67,7 @@ Rectangle {
             }
         }
 
-        // Отдельный компонент анимации загрузки
+        // Компонент анимации загрузки
         LoadingBar {
             id: loader
             stage: root.stage
