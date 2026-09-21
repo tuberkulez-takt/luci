@@ -33,13 +33,11 @@ Rectangle {
             "images/luci_hight.gif",
             "images/luci_drink.gif"
         ]
-        // Случайный индекс: Math.random() * 3 -> 0, 1 или 2
+        // Случайный индекс
         property string randomGif: gifList[Math.floor(Math.random() * gifList.length)]
 
         // Контейнер под гифку - центрируем
         Rectangle {
-            // Размер гифки на экране. Подбери под свой монитор:
-            // 500 - маленькая, 704 - средняя (как в CTOS), 900 - большая
             property int sizeAnim: 600
 
             id: imageSource
@@ -56,7 +54,7 @@ Rectangle {
                 source: content.randomGif
                 paused: false
                 playing: true
-                cache: false  // false
+                cache: false
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 width: imageSource.sizeAnim

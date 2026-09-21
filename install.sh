@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Установка Luci в KDE Plasma 6
+# Установка Luci
 # Корень проекта = корень темы (Id = luci)
 set -e
 SRC="$(cd "$(dirname "$0")" && pwd)"
@@ -20,7 +20,7 @@ fi
 
 mkdir -p "$HOME/.local/share/plasma/look-and-feel"
 rm -rf "$DST"
-# Копируем тему: корень проекта -> папка luci (исключая .git и служебное)
+# Копируем тему
 mkdir -p "$DST"
 cp "$SRC/metadata.json" "$DST/"
 cp -r "$SRC/contents" "$DST/"
