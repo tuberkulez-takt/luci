@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "niko"
+      }
+    ],
+    "Category": "",
+    "Description": "Luci - random GIF splash screen for Plasma 6",
+    "Id": "luci",
+    "License": "GPLv2+",
+    "Name": "Luci",
+    "Website": ""
+  },
+  "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Splash;Luci;",
+  "X-Plasma-APIVersion": "2"
+}
